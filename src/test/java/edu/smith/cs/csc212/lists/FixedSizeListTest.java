@@ -103,10 +103,10 @@ public class FixedSizeListTest {
 		return data;
 	}
 	
-	@Test(expected=RanOutOfSpaceError.class)
-	public void testAddBackFull() {
-		makeFullList().addBack("no space");
-	}
+    @Test(expected = RanOutOfSpaceError.class)
+    public void testAddBackFull() {
+        makeFullList().addBack("no space");
+    }
 	
 	@Test(expected=RanOutOfSpaceError.class)
 	public void testAddFrontFull() {
